@@ -1,0 +1,62 @@
+/* global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Viaoda Libre", cursive;
+  background: #eee;
+}
+
+h1:first-child,
+h2 {
+  text-align: center;
+}
+
+svg * {
+  font-family: "Viaoda Libre", cursive;
+}
+
+.axis-label {
+  font-weight: bold;
+}
+
+/* graph */
+#graph {
+  background: #fff;
+  width: 90%;
+  margin: 40px auto;
+  padding: 4px;
+  box-shadow: 1px 1px 25px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: auto;
+}
+
+#x-axis,
+#y-axis {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  opacity: 0.9;
+}
+
+#doping.dot {
+  stroke: #504ea7;
+}
+
+.dot:not(#doping) {
+  stroke: #c5680c;
+}
+
+/* tooltip */
+#tooltip {
+  position: absolute;
+  color: #222;
+  background: #f5f5f5;
+  font-family: "Dancing Script", cursive;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 1px #000;
+}
